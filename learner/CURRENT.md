@@ -1,6 +1,8 @@
 # CURRENT STATE
 
 > 跨对话恢复成长状态的唯一入口。只保存当前快照，完整历史进入 `learner/sessions/`。日常由 Cursor 更新并写入 Git。
+>
+> 新窗口第一句：`继续 GPT-Learning-Journey`。连续的是仓库，不是聊天记录。
 
 ## Current Stage
 

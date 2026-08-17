@@ -11,3 +11,4 @@
 | `git-evidence.md` | Git 作为成长证据 |
 | `capability-edge.md` | 找能力边缘、清晰化模糊点、再扩展 |
 | `reinforce.md` | 项目个人评判 + 跨周期再次强化 |
+| `resume.md` | 新窗口如何从 CURRENT 接上 |
