@@ -1,10 +1,10 @@
-# Protocols｜ChatGPT ↔ Cursor 协作协议
+# Protocols｜运行协议
 
-本目录定义两个 Agent 如何协作，而不是重复角色说明书。
+本目录定义 Agent 如何工作，而不是重复角色说明书。
 
 | 文件 | 用途 |
 | --- | --- |
-| `chatgpt-cursor.md` | 双 Agent 职责与闭环 |
+| `chatgpt-cursor.md` | 日常由 Cursor 单 Agent 运行；ChatGPT 为可选外援 |
 | `cursor-startup.md` | Cursor 启动检查 |
 | `no-direct-answers.md` | 禁止直接给架构答案 |
 | `constraint-increment.md` | 约束递增 |

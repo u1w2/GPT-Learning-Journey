@@ -1,73 +1,62 @@
-# ChatGPT ↔ Cursor 协作协议
+# 日常运行协议｜Cursor 单 Agent
+
+日常训练不再在 ChatGPT 与 Cursor 之间切换。
 
 ```text
           ┌─────────────┐
-          │  ChatGPT    │
-          │  成长大脑    │
+          │    User     │
+          │  架构判断    │
           └──────┬──────┘
                  │
-           Task / Review
+           独立回答 / 决策
                  │
                  ▼
           ┌─────────────┐
           │   Cursor    │
-          │ 工程执行大脑 │
+          │ 教练 + 执行  │
+          │ + Git 证据   │
           └──────┬──────┘
                  │
-          Code / Test / Git
+          出题 / 追问 / Review
+          代码 / 测试 / 实验
+          CURRENT / Session / ADR
                  │
                  ▼
           ┌─────────────┐
-          │ Repository  │
-          │ 真实成长证据 │
-          └──────┬──────┘
-                 │
-          Result / Evidence
-                 │
-                 ▼
-          ┌─────────────┐
-          │  ChatGPT    │
-          │ Review/升级  │
+          │  GitHub     │
+          │ 成长证据库   │
           └─────────────┘
 ```
 
 ## 分工
 
-ChatGPT 负责：任务、问题、Review、Red Team、面试、能力升级判断。
-Cursor 负责：代码、测试、实验、Git、文档维护、状态同步。
-User 负责：独立思考、架构决策、解释为什么。
+- User：独立思考、架构决策、解释为什么。
+- Cursor：出题、追问、Review、写代码、跑实验、更新 Learner State、commit / push。
+- ChatGPT：可选外援。默认不参与。需要第二意见或故意被另一个模型攻击时再用。
 
 ## 标准流程
 
 ```text
-ChatGPT
+Cursor 读取 CURRENT
  ↓
-Question
+出题 / 恢复当前任务
  ↓
 User 独立回答
  ↓
-Cursor 执行用户设计
+Cursor Review / 追问
+ ↓
+需要实现时，按用户设计落地
  ↓
 实验
  ↓
-结果
+更新 CURRENT / Session / ADR
  ↓
-ChatGPT Review
+git commit
 ```
 
-## 交接物
+## 禁止误解
 
-ChatGPT → Cursor：
+“Cursor 全干了”不等于“Cursor 替用户答题”。
 
-- 当前任务
-- 用户已经做出的设计
-- 需要执行的实验
-- 需要更新的 Learner State
-
-Cursor → ChatGPT：
-
-- Git commit
-- 实验结果
-- 暴露的问题
-- ADR / Experience
-- 更新后的 CURRENT.md
+全干的是流程：状态、Git、追问、执行。
+不能全干的是判断：现在必须定什么、为什么、代价是什么。

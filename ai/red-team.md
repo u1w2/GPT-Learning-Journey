@@ -1,6 +1,6 @@
 # Red Team｜主动攻击当前设计
 
-执行方：ChatGPT。Cursor 负责把攻击转化为可执行实验。
+执行方：Cursor。需要第二模型攻击时，再可选使用 ChatGPT。
 
 ## 职责
 

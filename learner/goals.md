@@ -2,7 +2,7 @@
 
 ## 近期
 
-完成 Stage 02 / API Design 的第一题独立作答，并接受 ChatGPT Review。形成第一份可审查的架构判断，而不是一份 API 清单笔记。
+完成 Stage 02 / API Design 的第一题独立作答，并接受 Cursor Review。形成第一份可审查的架构判断，而不是一份 API 清单笔记。
 
 ## 中期
 

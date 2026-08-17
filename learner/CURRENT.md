@@ -1,6 +1,6 @@
 # CURRENT STATE
 
-> 跨 ChatGPT / Cursor / 新对话恢复成长状态的唯一入口。只保存当前快照，完整历史进入 `learner/sessions/`。
+> 跨对话恢复成长状态的唯一入口。只保存当前快照，完整历史进入 `learner/sessions/`。日常由 Cursor 更新并写入 Git。
 
 ## Current Stage
 
@@ -28,7 +28,7 @@ IN_PROGRESS · 等待学习者独立作答
 
 ## Completed
 
-- 仓库已完成 GPT-Learning-Journey 双 Agent 项目初始化。
+- 仓库已完成 GPT-Learning-Journey 初始化，并接受 ADR-0001：日常 Cursor 单 Agent。
 - 已完成一次当前能力盘点：定位在“高级工程师 → 初级架构师”区间。架构思维已经开始形成，但理论体系、工程化、分布式、可靠性和结构化表达仍需补齐。
 - 已讨论 `user → user_order → order` 关联模型，并主动考虑冗余字段、查询压力、数据规模、区域划分、未来分布式以及时间/空间取舍。
 - 已进入 API 设计训练，并明确：只回答当前问题，不提前展开后续知识点。
@@ -37,7 +37,7 @@ IN_PROGRESS · 等待学习者独立作答
 
 API 设计基础：第一阶段就必须确定的 API 契约与演进边界。
 
-训练规则：先由学习者独立作答；ChatGPT Review；Cursor 不直接给正确答案，只可提醒遗漏、询问原因、要求补充和验证。
+训练规则：先由学习者在 Cursor 中独立作答；Cursor Review 并写入 Git。不直接给正确答案，只可提醒遗漏、询问原因、要求补充和验证。
 
 ## Current Capability
 
@@ -75,18 +75,19 @@ API 设计基础：第一阶段就必须确定的 API 契约与演进边界。
 
 ## Latest Learning Result
 
-2026-08-17：完成项目骨架、Learner State、AI 协作协议和模板初始化。成长体系从“课程仓库”切换为 ChatGPT + Cursor + Git 双 Agent 训练系统。当前训练点仍是 API Question 1，用户尚未提交独立设计。
+2026-08-17：完成项目初始化后，用户明确双 Agent 来回粘贴不如 Cursor 全流程执行。已接受 ADR-0001：日常由 Cursor 单 Agent 出题、Review、写 Git；ChatGPT 降为可选外援。当前训练点仍是 API Question 1，用户尚未提交独立设计。
 
 ## Next Single Task
 
-由学习者独立完成 API Question 1 的架构回答。不要让 Cursor 或 ChatGPT 先给标准答案。回答完成后再进入 Review，并把缺口写入 Learner State。
+在 Cursor 中独立完成 API Question 1。不要先要标准答案。答完后由 Cursor Review，并写入 CURRENT / Session / Git。
 
 ## Evidence
 
 - 初始化证据：本仓库目录、协议文件、Git commit
+- 运行架构证据：`experience/decisions/ADR-0001-cursor-primary.md`
 - 能力盘点证据：`learner/capability.md`、`learner/sessions/2026-08-17-init.md`
 - API Question 1 证据：尚无。用户作答后才能记为行为证据
 
 ## Last Updated
 
-2026-08-17
+2026-08-17 · ADR-0001 Cursor-primary

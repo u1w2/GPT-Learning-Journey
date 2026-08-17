@@ -13,7 +13,7 @@
 - 不重新学习编程语言
 - 不把课程看完当成掌握
 - 以真实问题、设计、编码、实验、故障、复盘和答辩为训练方式
-- ChatGPT 出题与 Review，Cursor 执行工程，User 负责判断
+- Cursor 出题、Review、执行工程并写入 Git；User 负责判断；ChatGPT 为可选外援
 
 ## 未知 / 待补充
 

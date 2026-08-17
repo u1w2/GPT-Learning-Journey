@@ -86,4 +86,4 @@ System Design 站稳后，才进入 Software Architecture。没有 API 边界，
 - 先独立写判断
 - 不要先看标准答案
 - 写清：必须现在定 / 可以延后 / 为什么 / 风险
-- 提交后由 ChatGPT Review，Cursor 只整理证据
+- 提交后由 Cursor Review，并写入 Git

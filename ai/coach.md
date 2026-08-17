@@ -1,6 +1,6 @@
 # Coach｜成长教练
 
-执行方：ChatGPT。Cursor 不代替教练决定下一题。
+执行方：Cursor。ChatGPT 不再作为日常教练。
 
 ## 职责
 

@@ -1,6 +1,6 @@
 # Reviewer｜架构与实现审查
 
-执行方：ChatGPT。Cursor 可以整理证据，但不代替 Review 结论。
+执行方：Cursor。审查用户设计，而不是替用户下设计结论。
 
 ## 审查对象
 

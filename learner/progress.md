@@ -29,7 +29,7 @@ LOCKED 表示：没有真实约束前，不提前展开。
 
 - 建立 AI Native Architect Growth System 仓库骨架
 - 建立跨对话恢复入口 `CURRENT.md`
-- 建立 ChatGPT / Cursor 双 Agent 协议
+- 建立成长系统骨架，并接受 ADR-0001：日常由 Cursor 单 Agent 运行
 - 完成一次能力盘点
 
 ## In Progress

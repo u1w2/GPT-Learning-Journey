@@ -2,8 +2,8 @@
 
 > **AI Native Architect Growth System**
 >
-> ChatGPT 负责成长教练 / 架构导师 / 出题人 / Reviewer。
-> Cursor 负责本地项目、代码、实验、Git 和持续执行。
+> 日常只对 Cursor 说话：它负责出题、追问、Review、写代码、跑实验、把状态写入 Git。
+> 你负责架构判断。ChatGPT 是可选外援，不是默认闭环。
 >
 > 目标不是“学完课程”，而是帮助一个已经拥有多年项目经验、但缺少系统架构训练的工程师，通过真实问题、设计、编码、实验、故障、复盘和架构答辩，逐渐成长为能够独立进行系统架构设计的高级工程师 / 架构师。
 
@@ -47,62 +47,44 @@ Experience Card
 
 **不能把“看过资料”视为掌握。**
 
-## 2. AI 双 Agent 架构
+## 2. 日常运行架构
+
+依据 `experience/decisions/ADR-0001-cursor-primary.md`：日常由 Cursor 单 Agent 执行。
 
 ```text
                     用户
                      │
+              独立架构判断
+                     │
                      ▼
              ┌──────────────┐
-             │   ChatGPT    │
-             │ Growth Coach │
-             └──────┬───────┘
-                    │
-          任务 / 问题 / Review
-                    │
-                    ▼
-             ┌──────────────┐
              │    Cursor    │
-             │ Local Agent  │
+             │ 教练 + 执行   │
              └──────┬───────┘
                     │
         ┌───────────┼───────────┐
         ▼           ▼           ▼
-      Code        Test        Experiment
+     Review       Code        Git
         │           │           │
         └───────────┼───────────┘
-                    ▼
-                Git History
-                    │
-                    ▼
-             Experience / ADR
-                    │
                     ▼
               能力成长证据
 ```
 
-### ChatGPT：成长大脑
+Cursor 负责：
 
-- Coach：制定成长任务、判断当前能力、找出短板、控制训练难度
-- Architect：提出架构问题、提供真实业务场景、要求做架构决策
-- Reviewer：审查设计与实现，找出遗漏、过度设计和生产风险
-- Red Team：主动攻击当前方案（流量、故障、重复、超时、依赖变慢）
-- Interviewer：要求不看文档解释“为什么这样设计”
-
-ChatGPT 不是代码执行器。
-
-### Cursor：工程实验室
-
-- 创建项目、修改代码、运行测试、运行服务、执行实验
-- 维护清晰 Git 历史
-- 同步 README、CURRENT、Session、ADR、Experience、能力状态
-- 提醒遗漏、询问原因、要求补充、要求验证
+- 出题、追问、Review、Red Team、面试
+- 创建项目、修改代码、运行测试和实验
+- 维护 CURRENT / Session / ADR / Experience
+- commit / push 到 GitHub
 
 **Cursor 不允许在用户独立回答之前直接给出架构题的“正确答案”。**
 
+ChatGPT 仅在需要第二意见时使用。不要把日常训练建立在“复制到另一个窗口”上。
+
 ## 3. 跨对话学习协议
 
-`learner/CURRENT.md` 是跨 ChatGPT / Cursor / 新对话恢复成长状态的**唯一入口**。
+`learner/CURRENT.md` 是跨对话恢复成长状态的**唯一入口**。Cursor 在每个有意义节点更新它并提交到 Git。
 
 当用户说：
 
@@ -316,6 +298,6 @@ git commit -m "learn: ..."
 
 ## 10. 当前版本
 
-当前仓库已建立完整项目骨架、Learner State、AI 双 Agent 协作协议、模板，以及 Stage 02 System Design / API Design 训练状态。
+当前仓库已建立完整项目骨架、Learner State、Cursor 单 Agent 日常协议、模板，以及 Stage 02 System Design / API Design 训练状态。
 
 下一步唯一任务由 `learner/CURRENT.md` 决定。
