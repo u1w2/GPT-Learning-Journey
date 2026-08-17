@@ -9,3 +9,4 @@
 | `no-direct-answers.md` | 禁止直接给架构答案 |
 | `constraint-increment.md` | 约束递增 |
 | `git-evidence.md` | Git 作为成长证据 |
+| `capability-edge.md` | 找能力边缘、清晰化模糊点、再扩展 |

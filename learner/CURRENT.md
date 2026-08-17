@@ -24,7 +24,7 @@ IN_PROGRESS · 等待学习者独立作答
 
 ## Current Goal
 
-把已经具备的业务、数据建模和扩展性直觉，训练成稳定的 API 架构决策方法：能够从客户端演进、兼容性、长期约束出发，判断“现在必须确定什么，什么应该刻意延后”。
+把已经具备的业务、数据建模和扩展性直觉，训练成稳定的架构决策方法。总目标是：找到能力边缘，把模糊部分清晰化，再适当扩展，成为能独立做系统架构、并具备 AI 系统设计经验的高级架构全栈师。
 
 ## Completed
 
@@ -75,11 +75,11 @@ API 设计基础：第一阶段就必须确定的 API 契约与演进边界。
 
 ## Latest Learning Result
 
-2026-08-17：完成项目初始化后，用户明确双 Agent 来回粘贴不如 Cursor 全流程执行。已接受 ADR-0001：日常由 Cursor 单 Agent 出题、Review、写 Git；ChatGPT 降为可选外援。当前训练点仍是 API Question 1，用户尚未提交独立设计。
+2026-08-17：用户澄清终局目标不是上完课程，而是找能力边缘、把模糊处清晰化，再扩展成带 AI 经验的高级架构全栈师。已写入 `learner/goals.md` 和 `ai/protocols/capability-edge.md`。当前主边缘仍是“现在必须定 / 必须延后”。API Question 1 尚未作答。
 
 ## Next Single Task
 
-在 Cursor 中独立完成 API Question 1。不要先要标准答案。答完后由 Cursor Review，并写入 CURRENT / Session / Git。
+在 Cursor 中独立完成 API Question 1。这次用来探测主边缘：哪些契约现在必须冻结，哪些必须延后。不要先要标准答案。
 
 ## Evidence
 
@@ -90,4 +90,4 @@ API 设计基础：第一阶段就必须确定的 API 契约与演进边界。
 
 ## Last Updated
 
-2026-08-17 · ADR-0001 Cursor-primary
+2026-08-17 · 目标对齐：能力边缘协议
