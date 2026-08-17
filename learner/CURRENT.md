@@ -60,7 +60,14 @@ API 设计基础：第一阶段就必须确定的 API 契约与演进边界。
 
 ## Weak Points
 
-见 `learner/weak-points.md`。
+见 `learner/weak-points.md` 与 `learner/defects.md`。
+
+主 Open 缺陷：
+
+- D-001 把未来规模当成当前必做项（R1 将在 API Question 1 探测）
+- D-002 把知道技术当成掌握架构（R1 将在 API Question 1 探测）
+
+下一周期必须带回这些缺陷做再次强化，不能只开新课。
 
 1. 架构直觉已经出现，但还没有可重复的架构方法论。
 2. 需要把“我觉得以后可能需要”训练成“在什么条件下需要、替代方案是什么、代价是什么”。
@@ -75,7 +82,7 @@ API 设计基础：第一阶段就必须确定的 API 契约与演进边界。
 
 ## Latest Learning Result
 
-2026-08-17：用户澄清终局目标不是上完课程，而是找能力边缘、把模糊处清晰化，再扩展成带 AI 经验的高级架构全栈师。已写入 `learner/goals.md` 和 `ai/protocols/capability-edge.md`。当前主边缘仍是“现在必须定 / 必须延后”。API Question 1 尚未作答。
+2026-08-17：补齐项目个人能力评判与跨周期强化。每个项目结束必须留下 capability-review，并把 Open 缺陷带入下一周期做 R2/R3 复测。强化是新情境再判断，不是背名词。当前仍等待 API Question 1 作为 D-001/D-002 的 R1。
 
 ## Next Single Task
 
@@ -90,4 +97,4 @@ API 设计基础：第一阶段就必须确定的 API 契约与演进边界。
 
 ## Last Updated
 
-2026-08-17 · 目标对齐：能力边缘协议
+2026-08-17 · 跨周期强化协议

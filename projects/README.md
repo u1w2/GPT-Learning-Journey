@@ -12,6 +12,8 @@
 → Root Cause → Solution → Trade-off
 → ADR → Limitations → Experience Card
 → Interview → Pattern Migration
+→ Personal Capability Review
+→ 把 Open 缺陷带入下一周期再次强化
 ```
 
 必须主动制造问题：

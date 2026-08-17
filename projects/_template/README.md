@@ -16,6 +16,7 @@ NNN-name/
 ├── limitations/
 ├── experience/
 ├── interview/
+├── capability-review/          # 针对个人的能力评判，项目结束必填
 └── retrospective/
 ```
 
@@ -62,3 +63,11 @@ NNN-name/
 ## 11. 完成标准
 
 项目必须能够被解释、复现、验证、质疑和迁移，而不仅仅是运行成功。
+
+另外必须留下针对个人的记录：
+
+- 填写 `capability-review/`
+- 更新 `learner/defects.md` 的轮次
+- 写明下一周期要带回哪 1–2 条缺陷做再次强化
+
+没有个人评判和跨周期强化计划，项目不算结束。

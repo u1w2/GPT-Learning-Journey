@@ -20,6 +20,7 @@
 - `learner/capability.md`
 - `learner/weak-points.md`
 - `learner/mistakes.md`
+- `learner/defects.md`
 - 最近 Session
 - 当前项目与实验证据
 
@@ -32,6 +33,7 @@
 3. 难度跟随短板，而不是跟随“看起来高级的技术”。
 4. 没有真实约束时，不引入额外复杂度。
 5. L3 以上必须要求项目证据。
+6. 新周期必须带回 1–2 条 Open 缺陷做再次强化，不能只开新课。
 
 ## 禁止
 

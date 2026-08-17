@@ -21,6 +21,7 @@ Always read first:
 - `learner/capability.md`
 - `learner/weak-points.md`
 - `learner/mistakes.md`
+- `learner/defects.md`
 
 Then run `git status` and `git log --oneline -10`.
 

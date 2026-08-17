@@ -12,5 +12,7 @@
 | `problem.md` | 问题复现 |
 | `session.md` | 学习会话 |
 | `capability-assessment.md` | 能力评估 |
+| `project-capability-review.md` | 项目结束时的个人能力评判 |
+| `defect-card.md` | 缺陷与复测轮次 |
 
 模板服务于经验形成和能力评估，避免为了完整而重复记录。

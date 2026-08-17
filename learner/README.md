@@ -9,7 +9,8 @@
 - `capability.md`：能力等级与证据
 - `progress.md`：当前阶段、已完成任务和下一任务
 - `assessment.md`：阶段性评估
-- `mistakes.md`：认知错误与复测
+- `mistakes.md`：认知错误摘要
+- `defects.md`：个人缺陷队列与跨周期强化轮次
 - `weak-points.md`：当前短板
 - `goals.md`：近期、中期、长期目标
 - `sessions/`：学习历史证据

@@ -17,6 +17,7 @@ learner/progress.md
 learner/capability.md
 learner/weak-points.md
 learner/mistakes.md
+learner/defects.md
 ```
 
 2. 检查：
@@ -34,6 +35,7 @@ git log --oneline -10
 当前项目：
 已经完成：
 当前短板：
+未关闭缺陷：
 未解决问题：
 下一步唯一任务：
 ```
