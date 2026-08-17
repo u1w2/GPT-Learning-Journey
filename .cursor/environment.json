@@ -1,0 +1,16 @@
+{
+  "name": "GPT-Learning-Journey",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "docs",
+      "command": "npm run docs"
+    }
+  ],
+  "ports": [
+    {
+      "name": "docs-preview",
+      "port": 3000
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  // Markdown lint config tuned for a bilingual (zh/en) docs repo.
+  "config": {
+    "default": true,
+    // Long prose/diagram lines are common in these docs; don't enforce a width.
+    "MD013": false,
+    // Allow inline HTML (used by docsify index and callouts).
+    "MD033": false,
+    // Allow duplicate headings across different sections/files.
+    "MD024": { "siblings_only": true },
+    // First line need not be a top-level heading (e.g. blockquote intros).
+    "MD041": false,
+    // Bare URLs are acceptable in these docs.
+    "MD034": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules", ".git"]
+}
