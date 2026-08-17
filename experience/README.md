@@ -7,10 +7,10 @@
 - `patterns/`：可复用架构模式
 - `trade-offs/`：方案权衡
 - `failures/`：故障与事故经验
-- `decisions/`：架构决策
-- `experience-cards/`：面试和实际项目可快速检索的经验卡
+- `decisions/`：架构决策 ADR
+- `experience-cards/`：可快速检索的经验卡
 
-## Experience Card 最少回答
+## Experience Card 必须回答
 
 - 场景是什么？
 - 问题是什么？
@@ -23,6 +23,4 @@
 - 局限是什么？
 - 可以迁移到哪些场景？
 
-## 目标
-
-让用户在面对新问题时，不从零开始背知识，而是能够从过去的项目经验中快速找到相似模式，再结合当前约束重新组合。
+当前还没有第一张业务经验卡。API Question 1 通过并进入项目实验后，再在这里积累。
