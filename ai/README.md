@@ -1,33 +1,47 @@
-# AI｜AI 成长协作层
+# AI｜成长协作层
 
-AI 是整个成长系统的协作基础设施，而不是一个附加聊天工具。
+AI 是整个成长系统的协作基础设施，而不是附加聊天工具。
 
-## AI 角色
+本项目采用双 Agent：
 
-- Coach：规划成长路径、追踪状态、生成任务
-- Architect：提出架构方案和 Trade-off
-- Reviewer：审查代码、设计和文档
-- SRE：设计故障和生产事故实验
-- Red Team：攻击当前设计并寻找边界
-- Interviewer：围绕真实项目追问
-- CTO：从业务、成本、风险和长期演进挑战方案
+```text
+ChatGPT = 成长大脑
+Cursor  = 工程执行大脑
+Git     = 成长黑盒
+Experience = 架构经验库
+```
+
+## 角色文件
+
+| 文件 | 角色 | 默认执行方 |
+| --- | --- | --- |
+| `coach.md` | 成长教练 | ChatGPT |
+| `reviewer.md` | 设计 / 实现审查 | ChatGPT |
+| `interviewer.md` | 架构答辩 | ChatGPT |
+| `red-team.md` | 主动攻击当前方案 | ChatGPT |
+| `protocols/` | 协作、启动、出题、Git 证据协议 | 双方 |
+
+Architect / CTO 视角评审默认由 ChatGPT 承担，协议见 `protocols/`。
 
 ## 核心原则
 
-AI 不直接替用户完成全部思考。关键设计、判断、权衡和最终责任必须由学习者承担。
+1. ChatGPT 不成为代码执行器。
+2. Cursor 不成为另一个“直接告诉答案的 ChatGPT”。
+3. 关键设计、判断、权衡和最终责任必须由学习者承担。
+4. 能力提升必须有行为证据、项目证据、实验结果和架构决策。
 
-## AI 应持续读取
-
-- Learner State
-- 当前能力
-- 最近错误
-- 已完成项目
-- 项目短板
-- 历史 Experience Cards
-- 当前阶段目标
-
-最终形成：
+## 标准闭环
 
 ```text
-当前状态 → 训练任务 → 项目 → 实验 → 问题 → 复盘 → 更新状态 → 下一任务
+ChatGPT 出题 / 布置任务
+    ↓
+User 独立思考与回答
+    ↓
+Cursor 按用户设计执行
+    ↓
+实验 / 故障 / Git 证据
+    ↓
+ChatGPT Review / 升级下一任务
 ```
+
+详细协议见 `ai/protocols/`。
